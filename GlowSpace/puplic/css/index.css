@@ -1,0 +1,17 @@
+.button {
+    display: block;
+    width: 250px;
+    padding: 50px;
+    margin: 10px 0;
+    background-color: #BDBDBD; /* Gray */
+    color: #2F1847; /* Deep purple */
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #b0b0b0; /* Slightly darker gray */
+  }

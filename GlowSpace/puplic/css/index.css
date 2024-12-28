@@ -1,12 +1,14 @@
-.button {
+
+  .button {
     display: block;
-    width: 250px;
-    padding: 50px;
-    margin: 10px 0;
-    background-color: #BDBDBD; /* Gray */
-    color: #2F1847; /* Deep purple */
+    width: 270px; /* Optimal width for buttons */
+    padding: 40px;
+    margin: 10px;
+    background-color: #C4C4C4; 
+    color: #2E004F; 
     text-decoration: none;
     text-align: center;
+    font-size:large;
     font-weight: bold;
     border-radius: 10px;
     transition: background-color 0.3s ease;

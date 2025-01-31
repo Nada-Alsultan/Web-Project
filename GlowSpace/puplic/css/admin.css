@@ -6,7 +6,7 @@
   body {
     font-family: Arial, sans-serif;
     height: 100vh;
-    background-color: hsl(0, 0%, 77%);
+    background: #bdbdbd;
   }
   .container1{
     display: flex;
@@ -83,5 +83,63 @@
   .container2{
     display: flex;
     flex-direction: column;
+    align-items:start;
+    justify-content: end;
+    margin: 10px;
+    padding: 10px;
     
+  }
+  .statistics{
+    display: flex;
+    flex-direction: row;
+   
+    
+    
+  }
+  .totalBooking, .mostRequisted{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    border-radius: 10px;
+   margin-right: 10px;
+   margin-bottom: 20px;
+    padding: 20px;
+    width: 350.84px;
+    height: 154px;
+    background: #d3d3d3;
+    align-items: center;
+  }
+  .totalBooking i , .mostRequisted i{
+    color: #ffffff;
+    font-size: 90px;
+    text-shadow: 0px 4px 30px #2f1847;;
+  
+  }
+
+  .bookings{
+    background: #d3d3d3;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .managmentTool{
+    display: none;
+  }
+  .managmentTool li{
+    list-style:none;
+    padding: 10px;
+    border-bottom: solid black;
+  }
+  .managmentTool li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+   
+  }
+  .managmentTool li:hover{
+    opacity: 0.5;
   }

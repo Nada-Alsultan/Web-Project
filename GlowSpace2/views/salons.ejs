@@ -1,0 +1,37 @@
+<%- include('./partials/header') -%>
+<%- include('./partials/navbar') -%>
+
+    <div class="container">
+        <embed class="side-wave" type="image/svg+xml" alt="Side Wave"
+            src="https://cdn-eu.icons8.com/docs/lsvK9DYZFkyHDB6njnt6Xw/-soou1t100GgIYAEEY1C4w.svg" />
+
+        <div class="logo">
+            <img src="./images/GlowSpace.png" alt="GlowSpace Logo">
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by name or location...">
+        </div>
+        <div class="salons-container">
+            <% salons.forEach(function(salon) { %>
+                <div class="salon-card" data-name="<%= salon.name.toLowerCase() %>"
+                    data-location="<%= salon.location.toLowerCase() %>">
+                    <img src="<%= '/images/' + salon.logo %>" alt="<%= salon.name %> Logo">
+                    <h2>
+                        <%= salon.name %>
+                    </h2>
+                    <p>
+                        <%= salon.description %>
+                    </p>
+                    <p class="location"><strong>Location:</strong>
+                        <%= salon.location %>
+                    </p>
+                    <button onclick="showDetails('<%= salon.name %>')">More Details</button>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+
+
+
+    <%- include('./partials/footer') -%>

@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;    
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #2E004F, #4B007D); /* Background gradient */
+  position: relative;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.side-wave {
+  position: absolute;
+  top: 0;
+  right:0;
+  height: 100vh;  /* Fills the entire browser viewport height */
+  width: 120vw;  /* Keeps aspect ratio */
+  z-index: -1;
+}
+
+.logo img {
+  margin-bottom: 3%;
+  width: 500px;
+
+}
+
+.salons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.custom-link {
+  text-decoration: none; /* Removes the underline */
+  color: white;          /* Sets the color to white */
+}
+
+.custom-link:hover {
+  color: lightgray;       /* Optional: Changes color on hover */
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.salon-card {
+  background-color: #FFFFFF;
+  color: #2F1B53;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.salon-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.salon-card p {
+  text-align: left;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.salon-card button {
+  background-color: #2F1B53;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.salon-card button:hover {
+  background-color: #523985;
+}
+
+footer {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 2;
+  text-align: center;
+  margin-left: 10px;
+}
+
+footer span {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #2E004F;
+  font-size: small;
+  font-weight: bold;
+}
+
+footer span a {
+  text-decoration: none;
+  color: #2E004F;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+  opacity: 0.5;
+}

@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;    
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #2E004F, #4B007D); /* Background gradient */
+  position: relative;
+}
+
+
+.side-wave {
+  position: absolute;
+  top: 0;
+  right:0;
+  height: 100vh;  /* Fills the entire browser viewport height */
+  width: 120vw;  /* Keeps aspect ratio */
+  z-index: -1;
+}
+
+
+.logo img {
+  margin-bottom: 3%;
+  width: 500px;
+
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+
+.formcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 20px;
+    width: fit-content;
+
+   
+}
+.loginform{
+    position: relative;
+    display: flex;
+    background-color: #BDBDBD;  
+    color: #2F1847;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    
+
+}
+.submit {
+    position: absolute; /* Position within the form */
+    bottom: 20px; /* Distance from the bottom of the form */
+    right: 20px; /* Distance from the right of the form */
+    display: flex; 
+    align-items: center;
+    gap: 20px;
+    
+}
+.submit input{
+     padding:5px 10px 5px 10px;
+     
+}
+.submit button{
+  padding:5px 10px 5px 10px;
+  
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+}
+i{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+.loginform input[type="email"] , input[type="password"]{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 90%;
+}

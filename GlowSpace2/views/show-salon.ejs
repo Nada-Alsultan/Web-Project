@@ -1,0 +1,39 @@
+<%- include('./partials/header') -%>
+<%- include('./partials/navbar') -%>
+
+<div class="salon-detail-container">
+    <div class="salon-header">
+        <img src="<%= '../images/' + salon.logo %>" alt="<%= salon.name %> Logo" class="salon-logo">
+        <h1 class="salon-name">
+            <%= salon.name %>
+        </h1>
+        <p> <%= salon.description %></p>
+        <div class="info-container">
+            <img src="../images/address.png" alt="Address Icon" class="icon" />
+            <p class="info-text"> <%= salon.location %></p>
+        </div>
+
+        <!-- Phone Section -->
+        <div class="info-container">
+            <img src="../images/phone.png" alt="Phone Icon" class="icon" />
+            <p class="info-text"> <%= salon.phone %></p>
+        </div>
+        
+    </div>
+
+    <div class="salon-services">
+        <h2>Services</h2>
+        <ul class="service-list">
+            <% salon.services.forEach(service => { %>
+                <li class="service-item">
+                    <span class="service-name"><%= service.serviceName %></span>
+                    <span class="service-price">$<%= service.servicePrice %></span>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+
+    <a href="/salons" class="back-link">Back to all salons</a>
+</div>
+
+<%- include('./partials/footer') -%>

@@ -1,7 +1,8 @@
 # Web-Project
+![logo](https://github.com/user-attachments/assets/961dc147-dc0a-4a8e-b92a-0fe628e357e3)
+
 # GlowSpace Overview🌟
 
-![logo](https://github.com/user-attachments/assets/961dc147-dc0a-4a8e-b92a-0fe628e357e3)
 **GlowSpace**  is a web platform that connects users with the top beauty salons in Riyadh. It provides an intuitive and user-friendly experience for discovering salons, show their rates, and exploring their services. The platform also features an admin panel for salon owners to manage their information, services.
 
 ## Flowchart

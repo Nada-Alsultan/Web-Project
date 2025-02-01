@@ -1,12 +1,13 @@
 # Web-Project
-# GlowSpace 🌟
+# GlowSpace Overview🌟
 
 **GlowSpace** 
-# Overview
 GlowSpace is a web platform that connects users with the top beauty salons in Riyadh. It provides an intuitive and user-friendly experience for discovering salons, show their rates, and exploring their services. The platform also features an admin panel for salon owners to manage their information, services.
-Flowchart
+
+# Flowchart
 A detailed flowchart illustrating the website's functionality can be found at the following link: [Insert Flowchart Link Here]
-Setup
+
+# Setup
 To set up and run the project locally, follow these steps:
 1.	Clone the Repository
 git clone https://github.com/Nada-Alsultan/Web-Project.git
@@ -19,35 +20,38 @@ Ensure MongoDB is installed and running on mongodb://0.0.0.0:27017/glowspace
 npm start  
 5.	Access the Website 
 Open http://localhost:3000 in your browser.
-Technologies Used
-•	Frontend: React.js, Tailwind CSS
+
+# Technologies Used
+•	Frontend: ejs, CSS
 •	Backend: Node.js, Express.js
 •	Database: MongoDB
-•	Authentication: JWT (JSON Web Token)
-Goals
+
+# Goals
 •	Provide an easy-to-use browing system for salons.
 •	Allow users to explore salon services and contact details.
 •	Enable salon owners to manage their business efficiently.
 •	Implement a user-friendly interface with a responsive design.
-Screenshots
-Include relevant screenshots of the website interface:
+
+# Screenshots
 •	Home Page
 •	Salon Profile
 •	Sign up
 •	Log in 
 •	Salon dashboard 
 •	Salon Profile edit
-Future Work
+
+# Future Work
 •	Implement booking services for each salon with time schedule.
 •	Implement payment integration for prepaid bookings.
 •	Develop a mobile application for better accessibility.
 •	Allow user comment reviews with policy for salons.
 •	Improve filtering options.
-Resources
+
+# Resources
 •	MongoDB Documentation
 •	Express.js Guide
 •	React.js Documentation
-Team Members
+# Team Members
 •	Fai bin Onayq
 •	Amwaj Alzahrani
 •	Nada Alsultan

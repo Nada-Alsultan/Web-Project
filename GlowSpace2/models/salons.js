@@ -1,23 +1,21 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const salonSchema = new Schema({
-    name: { type: String, required: true },
-    location: { type: String, required: true },
-    phone: { type: String, required: true },
-    description: { type: String },
-    admin: { type: Schema.Types.ObjectId, ref: 'Admin' },
-    logo : { type: String, required: false },
-    
-    services: [{
-        serviceName: { type: String, required: false },
-        servicePrice: { type: Number, required: false }
-    }],
-    schedule: [{
-        day: { type: String, required: false },
-        openTime: { type: String, required: false },
-        closeTime: { type: String, required: false }
-    }]
+const salonSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  location: { type: String, required: true },
+  locationLink: { type: String, required: true },
+  phone: { type: Number, required: true },
+  logo: { type: String, required: true },
+  description: { type: String, required: true },
+  services: [
+    { serviceName: { type: String, required: true }, servicePrice: { type: Number, required: true } }
+  ],
+  ratings: {
+    averageRating: Number,
+    totalVotes: Number
+  }
+
 });
 
 module.exports = mongoose.model('Salon', salonSchema);

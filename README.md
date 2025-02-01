@@ -10,8 +10,8 @@ A detailed flowchart illustrating the website's functionality can be found at th
 # Setup
 To set up and run the project locally, follow these steps:
 1.	Clone the Repository
-git clone https://github.com/Nada-Alsultan/Web-Project.git
-cd Web-Project
+- 'git clone https://github.com/Nada-Alsultan/Web-Project.git'
+- 'cd Web-Project'
 2.	Install Dependencies
 npm install  
 3.	Setup MongoDB Database

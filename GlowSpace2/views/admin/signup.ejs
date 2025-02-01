@@ -9,8 +9,8 @@
     
 </head>
 <body>
-<%- include('../partials/header') -%>
-<%- include('../partials/navbar') -%>
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
 <div class="container">
   <embed class="side-wave" type="image/svg+xml" alt="Side Wave" src="https://cdn-eu.icons8.com/docs/lsvK9DYZFkyHDB6njnt6Xw/-soou1t100GgIYAEEY1C4w.svg" />
   
@@ -21,10 +21,10 @@
   </header>
   <main>
     <div class="formcontainer">
-      <h3 style="color: #C4C4C4;">Admin Login</h3>
+      <h3 style="color: #C4C4C4;">Admin SignUp</h3>
       <hr>
-      <%- include('../partials/flashMessages') -%>         
-            <form  class="loginform" action="/users/signup" method="post">
+      <%- include('../partials/flashMessages') %>         
+            <form  class="loginform" action="/admin/signup" method="post">
                 <div class="container1">
                     <label for="email">Email</label>
                     <input type="text" name="email" id="email" required>
@@ -33,6 +33,13 @@
               
                     <label for="confirm_password">Confirm Password</label>
                     <input type="password" name="confirm_password" id="confirm_password" required>
+
+                    <label for="salonName">Salon Name:</label>
+                    <input type="text" id="salonName" name="salonName" required>
+                    <label for="salonLocation">Salon Location:</label>
+                    <input type="text" id="salonLocation" name="salonLocation" required>
+                    <label for="salonPhone">Salon Phone:</label>
+                    <input type="text" id="salonPhone" name="salonPhone" required>
                 </div>
                     <div class="submit">
                         <button type="submit" > Signup</button>

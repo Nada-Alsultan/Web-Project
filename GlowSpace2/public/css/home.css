@@ -82,7 +82,6 @@ body {
 }
 
 .salon-card .location {
-  display: none;
   /* Hidden by default */
   font-size: 14px;
   color: #777;

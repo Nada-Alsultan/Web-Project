@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowSpace - Admin Profile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/profile.css">
+  <script src="/js/admin.js"></script>
+</head>
+<body>
+    <div class="container1">
+        <%- include('../partials/adminHeader') %>
+        <div class="container2">
+            <form action="/events/add-service" method="post" class="profile-form" >
+                <fieldset>
+                    <label for="serviceName">Service Name:</label>
+                     <input type="text" id="serviceName" name="serviceName" required>
+                     
+                     <label for="servicePrice">Price:</label>
+                     <input type="number" id="servicePrice" name="servicePrice" required>
+  
+                </fieldset>
+                <button type="submit">Add Service</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

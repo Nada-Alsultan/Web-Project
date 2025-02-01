@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: #bdbdbd;
+  }
+  .container1{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    
+  }
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #2E004F;
+    width: 20%;
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+    padding: 10px;
+  }
+  .logo img{
+    margin-bottom: 10px;
+    width: 90%;
+  }
+
+
+.sidebar-link,.sidebar-button {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+.sidebar-link span i  {
+    color: #ffffff;
+} 
+
+.sidebar-link:hover,
+.sidebar-button:hover {
+  background-color: #4A006F;
+}
+
+.sidebar-button {
+  font-size: 1rem;
+}
+  footer {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 2;
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: small;
+  }
+
+
+  
+
+  .container2{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: end;
+    margin: 30px;
+    padding: 10px;
+    width: 100%;
+    
+  }
+
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #d3d3d3;
+    height: 100%;
+    border-radius: 10px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.service-card {
+    width: 80%; /* Cards take full width of the container */
+    background-color: #f3f3f3; /* Light grey background */
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    margin-bottom: 20px; /* Space between cards */
+    border-radius: 10px;
+}
+
+.service-content {
+    margin-bottom: 10px; /* Space above the buttons */
+}
+
+.service-actions {
+  
+  position: relative;
+    text-align: right; /* Align buttons to the right */
+}
+
+
+
+
+.edit-btn, .delete-btn {
+  margin-left: 10px; /* Space between buttons */
+  width: 10%;
+  padding: 10px;
+  color: white;
+  background-color:  #4A006F;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+    
+}
+.add-btn{
+  position: absolute;
+  top:10px ;
+  right: 10px;
+  margin-left: 10px; /* Space between buttons */
+  width: 5%;
+  padding: 10px;
+  color: white;
+  background-color:  #4A006F;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.add-btn:hover,.edit-btn:hover, .delete-btn:hover{
+
+  opacity: 0.5;
+}
+
+
+  .totalBooking, .mostRequisted{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    border-radius: 10px;
+   margin-right: 10px;
+   margin-bottom: 20px;
+    padding: 20px;
+    width: 350.84px;
+    height: 154px;
+    background: #d3d3d3;
+    align-items: center;
+  }
+  .totalBooking i , .mostRequisted i{
+    color: #ffffff;
+    font-size: 90px;
+    text-shadow: 0px 4px 30px #2f1847;;
+  
+  }
+
+  .schedule{
+    background: #d3d3d3;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .managmentTool{
+    display: none;
+  }
+  .managmentTool li{
+    list-style:none;
+    padding: 10px;
+    border-bottom: solid black;
+  }
+  .managmentTool li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+   
+  }
+  .managmentTool li:hover{
+    opacity: 0.5;
+  }
+
+  /* Style for modal */
+.modal {
+
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+

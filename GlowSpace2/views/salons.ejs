@@ -16,7 +16,7 @@
             <% salons.forEach(function(salon) { %>
                 <div class="salon-card" data-name="<%= salon.name.toLowerCase() %>"
                     data-location="<%= salon.location.toLowerCase() %>">
-                    <img src="<%= '/images/' + salon.logo %>" alt="<%= salon.name %> Logo">
+                    <img src="<%= salon.logo %>" alt="<%= salon.name %> Logo">
                     <h2>
                         <%= salon.name %>
                     </h2>

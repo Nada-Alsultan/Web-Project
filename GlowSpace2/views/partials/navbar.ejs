@@ -7,9 +7,9 @@
       </a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#" class="custom-link"> Home</a></li>
+      <li class="active"><a href="<%= currentPath.includes('salons') ? '../salons' : './salons' %>" class="custom-link"> Home</a></li>
       <li><a href="#" class="custom-link"> Book</a></li>
-      <li><a href="#" class="custom-link">About</a></li>
+      <li><a href="<%= currentPath.includes('salons') ? '../about' : './about' %>" class="custom-link">About</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#" class="custom-link"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

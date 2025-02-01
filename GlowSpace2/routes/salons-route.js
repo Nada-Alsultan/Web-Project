@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const Salon = require('../models/salons');
 
+
+
+
 // Route to fetch all salons
 router.get('/', async (req, res) => {
   try {
@@ -17,7 +20,6 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const salon = await Salon.findById(req.params.id);
-    console.log(req.path);
     if (!salon) {
       return res.status(404).send('Salon not found');
     }
@@ -26,5 +28,7 @@ router.get('/:id', async (req, res) => {
     res.status(500).send(err);
   }
 });
+
+
 
 module.exports = router;

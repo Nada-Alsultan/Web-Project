@@ -1,7 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Gentium Plus", serif;
   margin: 0;
   background-color: #2E004F;
+}
+
+nav {
+  font-family: "Quicksand", serif;
 }
 
 .container {
@@ -113,10 +117,10 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .salon-header {
   text-align: center;
   margin-bottom: 20px;
+  color: #2F1B53;
 }
 
 .salon-logo {
@@ -130,7 +134,12 @@ footer {
 
 .salon-name {
   font-size: 32px;
-  color: #2E004F;
+  color: #2F1B53;
+  margin: 10px 0;
+}
+.salon-name-about{
+  font-size: 24px;
+  color: white;
   margin: 10px 0;
 }
 
@@ -148,11 +157,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.salon-services h2 {
-  font-size: 24px;
-  color: #2E004F;
-  margin-bottom: 15px;
-}
+
 
 .service-list {
   list-style: none;
@@ -208,4 +213,27 @@ footer {
   width: 20px; 
   height: 20px;
   margin-right: 10px; 
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: auto;
+}
+
+.about-container {
+  display: flex;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-div{
+  margin: auto;
+}
+
+.checked {
+  color: orange;
 }

@@ -48,9 +48,9 @@ To set up and run the project locally, follow these steps:
 - Improve filtering options.
 
 ## Resources
-- MongoDB Documentation
-- Express.js Guide
-- React.js Documentation
+- MongoDB Documentation[https://www.mongodb.com/docs/]
+- Express.js Guide[https://expressjs.com/]
+- React.js Documentation[https://legacy.reactjs.org/docs]
 
 ## Team Members
 - Fai bin Onayq

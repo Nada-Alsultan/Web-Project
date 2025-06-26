@@ -1,0 +1,61 @@
+<%- include('./partials/header') -%>
+    <%- include('./partials/navbar') -%>
+
+        <div class="salon-detail-container" data-salon-id="<%= salon._id %>">
+            <div class="salon-header">
+                <img src="<%= salon.logo? salon.logo : '/images/tab.png' %>" alt="<%= salon.name %> Logo" class="salon-logo">
+                <h1 class="salon-name">
+                    <%= salon.name %>
+                </h1>
+                <div class="rating">
+                    <span id="star-1" data-value="1" class="fa fa-star"></span>
+                    <span id="star-2" data-value="2" class="fa fa-star"></span>
+                    <span id="star-3" data-value="3" class="fa fa-star"></span>
+                    <span id="star-4" data-value="4" class="fa fa-star"></span>
+                    <span id="star-5" data-value="5" class="fa fa-star"></span>
+                    <span id="rating-result">
+                        <%= salon.ratings.averageRating %> / 5 - reviews: <%= salon.ratings.totalVotes %>
+                    </span>
+                </div>
+                <p>
+                    <%= salon.description %>
+                </p>
+                <div class="info-container">
+                    <img src="../images/address.png" alt="Address Icon" class="icon" />
+                    <a class="info-text" href ="<%= salon.locationLink %>" target="_blank">
+                        <%= salon.location %>
+                    </a>
+                </div>
+
+                <!-- Phone Section -->
+                <div class="info-container">
+                    <img src="../images/phone.png" alt="Phone Icon" class="icon" />
+                    <p class="info-text">
+                        <%= salon.phone %>
+                    </p>
+                </div>
+
+                
+
+            </div>
+
+            <div class="salon-services">
+                <h2>Services</h2>
+                <ul class="service-list">
+                    <% salon.services.forEach(service=> { %>
+                        <li class="service-item">
+                            <span class="service-name">
+                                <%= service.serviceName %>
+                            </span>
+                            <span class="service-price">$<%= service.servicePrice %></span>
+                        </li>
+                        <% }) %>
+                </ul>
+            </div>
+
+
+            <a href="/salons" class="back-link">Back to all salons</a>
+        </div>
+
+        <script src="../js/salon-show.js"></script>
+        <%- include('./partials/footer') -%>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Service - Admin Profile</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/css/profile.css">
+  <script src="/js/admin.js"></script>
+</head>
+
+<body>
+  <div class="container1">
+    <%- include('../partials/adminHeader') %>
+      <div class="container2">
+        <form action="/events/delete-service/<%= service._id %>" method="post" class="profile-form">
+          <h1>Confirm Deletion</h1>
+          <p>Are you sure you want to delete the service "<%= service.serviceName %>"?</p>
+          <button type="submit" class="btn btn-danger">Confirm Delete</button>
+          <a href="/admin/dashboard" class="btn btn-secondary">Cancel</a>
+        </form>
+      </div>
+  </div>
+
+</body>
+
+</html>
